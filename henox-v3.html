@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HENOX — Premium Mobile Detailing | Guelph & Toronto</title>
+<meta name="description" content="HENOX Mobile Detailing — premium hand-wash, interior detail, and paint correction in Guelph, Kitchener, Cambridge, Mississauga & Toronto. We come to you.">
+<meta name="keywords" content="mobile detailing, car detailing, Guelph, Toronto, Kitchener, Cambridge, Mississauga, Ontario, interior detail, paint correction, hand wash">
+<meta name="author" content="HENOX Detailing">
+<!-- Open Graph -->
+<meta property="og:title" content="HENOX — Premium Mobile Detailing | Guelph & Toronto">
+<meta property="og:description" content="Premium mobile car detailing across Ontario. Interior, exterior, paint correction — we come to your driveway.">
+<meta property="og:image" content="images/bmw-front.jpg">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_CA">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HENOX — Premium Mobile Detailing">
+<meta name="twitter:description" content="Premium mobile car detailing across Ontario. We come to you.">
+<meta name="twitter:image" content="images/bmw-front.jpg">
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%237D1515'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='%23EDE9E3' font-family='sans-serif' font-weight='900' font-size='18'%3EH%3C/text%3E%3C/svg%3E">
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "HENOX Detailing",
+  "description": "Premium mobile car detailing serving Guelph, Kitchener, Cambridge, Mississauga & Toronto, Ontario.",
+  "image": "images/bmw-front.jpg",
+  "telephone": "+1-519-400-0367",
+  "email": "Henihenihabesha@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "50 Doyle Drive",
+    "addressLocality": "Guelph",
+    "addressRegion": "ON",
+    "addressCountry": "CA"
+  },
+  "areaServed": [
+    {"@type": "City", "name": "Guelph"},
+    {"@type": "City", "name": "Kitchener"},
+    {"@type": "City", "name": "Cambridge"},
+    {"@type": "City", "name": "Mississauga"},
+    {"@type": "City", "name": "Toronto"}
+  ],
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "16:00"}
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "47"
+  },
+  "priceRange": "$60 - $335 CAD"
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;0,900;1,700&family=Barlow:wght@300;400;500&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --red:#7D1515;--red-mid:#9B1C1C;--red-bright:#B52020;
+  --red-dim:rgba(125,21,21,.12);--red-glow:rgba(125,21,21,.28);
+  --black:#050505;--b2:#090909;--b3:#0f0f0f;--b4:#161616;--b5:#1d1d1d;
+  --white:#EDE9E3;--mu:rgba(237,233,227,.42);--mu2:rgba(237,233,227,.68);
+  --bdr:rgba(237,233,227,.07);--bdr-r:rgba(125,21,21,.32);
+  --D:'Barlow Condensed',sans-serif;--B:'Barlow',sans-serif;--M:'Share Tech Mono',monospace
+}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--white);font-family:var(--B);font-size:16px;line-height:1.6;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.02;pointer-events:none;z-index:999}
+/* SKIP LINK */
+.skip{position:absolute;top:-100%;left:50%;transform:translateX(-50%);background:var(--red);color:var(--white);padding:.75rem 1.5rem;font-family:var(--D);font-weight:700;letter-spacing:2px;text-transform:uppercase;text-decoration:none;z-index:10000;font-size:.85rem}
+.skip:focus{top:0}
+/* CURSOR */
+.cur{position:fixed;width:10px;height:10px;background:var(--red-mid);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);display:none}
+.cur-ring{position:fixed;width:38px;height:38px;border:1px solid rgba(155,28,28,.45);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:width .3s,height .3s,border-color .3s;display:none}
+.custom-cursor .cur,.custom-cursor .cur-ring{display:block}
+.custom-cursor, .custom-cursor a, .custom-cursor button, .custom-cursor select{cursor:none}
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;justify-content:space-between;align-items:center;padding:1.5rem 4rem;transition:background .4s,padding .3s}
+nav.sc{background:rgba(5,5,5,.97);padding:1rem 4rem;border-bottom:1px solid var(--bdr);backdrop-filter:blur(16px)}
+.nl{font-family:var(--D);font-size:1.9rem;font-weight:900;letter-spacing:6px;color:var(--white);text-decoration:none}
+.nl span{color:var(--red-mid)}
+.nls{display:flex;gap:2.5rem;list-style:none}
+.nls a{font-family:var(--M);font-size:.68rem;letter-spacing:2px;color:var(--mu);text-decoration:none;text-transform:uppercase;position:relative;transition:color .2s}
+.nls a::after{content:'';position:absolute;bottom:-4px;left:0;right:0;height:1px;background:var(--red-mid);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.nls a:hover{color:var(--white)}
+.nls a:hover::after{transform:scaleX(1)}
+.nb{font-family:var(--D);font-size:.85rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:.65rem 1.75rem;background:var(--red);color:var(--white);border:none;text-decoration:none;transition:background .2s;clip-path:polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%)}
+.nb:hover{background:var(--red-bright)}
+/* HERO */
+.hero{position:relative;height:100vh;min-height:680px;overflow:hidden}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity 1.3s ease}
+.slide.active{opacity:1}
+.slide-bg{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.06);transition:transform 8s ease}
+.slide.active .slide-bg{transform:scale(1)}
+.slide-ov{position:absolute;inset:0;background:linear-gradient(105deg,rgba(5,5,5,.93) 28%,rgba(5,5,5,.5) 62%,rgba(5,5,5,.82) 100%)}
+.s1 .slide-bg{background-image:url('images/bmw-front.jpg')}
+.s2 .slide-bg{background-image:url('images/corvette-full.jpg')}
+.s3 .slide-bg{background-image:url('images/corvette-rear.jpg')}
+.s4 .slide-bg{background-image:url('images/bmw-side.jpg')}
+.s5 .slide-bg{background-image:url('images/corvette-side.jpg')}
+.hero-grid{position:absolute;inset:0;z-index:2;background-image:linear-gradient(rgba(125,21,21,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(125,21,21,.035) 1px,transparent 1px);background-size:65px 65px;mask-image:linear-gradient(to bottom,transparent,rgba(0,0,0,.3) 30%,transparent 100%);pointer-events:none}
+.hero-content{position:absolute;inset:0;z-index:3;display:flex;flex-direction:column;justify-content:flex-end;padding:0 4rem 5rem}
+.h-ey{font-family:var(--M);font-size:.65rem;letter-spacing:4px;color:var(--red-mid);text-transform:uppercase;margin-bottom:1.25rem;display:flex;align-items:center;gap:.75rem;opacity:0;animation:hf .8s .4s ease forwards}
+.h-ey::before{content:'//';opacity:.5}
+.h-h1{font-family:var(--D);font-weight:900;font-size:clamp(5rem,11vw,10.5rem);line-height:.88;letter-spacing:-1px;text-transform:uppercase;color:var(--white);margin-bottom:.5rem;opacity:0;animation:hf .9s .55s ease forwards}
+.h-h1 .out{color:transparent;-webkit-text-stroke:2px var(--red-mid)}
+.h-sub{font-family:var(--D);font-weight:300;font-style:italic;font-size:clamp(1.8rem,4vw,3.5rem);letter-spacing:4px;color:var(--mu);margin-bottom:2.5rem;opacity:0;animation:hf .9s .7s ease forwards}
+.h-btns{display:flex;gap:1.25rem;align-items:center;opacity:0;animation:hf .9s .9s ease forwards}
+.h-stats{position:absolute;top:50%;right:4rem;transform:translateY(-50%);z-index:3;display:flex;flex-direction:column;gap:2.5rem;opacity:0;animation:hf .8s 1.1s ease forwards}
+.hst{text-align:right}
+.hst-n{font-family:var(--D);font-size:3rem;font-weight:900;color:var(--white);line-height:1}
+.hst-n sup{font-size:1rem;color:var(--red-mid)}
+.hst-l{font-family:var(--M);font-size:.6rem;letter-spacing:3px;color:var(--mu);text-transform:uppercase;margin-top:.2rem}
+.hst-ln{width:36px;height:1px;background:var(--red);margin-left:auto;margin-top:.4rem}
+.dots{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);z-index:10;display:flex;gap:.6rem}
+.dot{width:24px;height:2px;background:rgba(237,233,227,.22);cursor:pointer;transition:background .3s,width .3s;border:none;padding:0}
+.dot.active{background:var(--red-mid);width:40px}
+.arr{position:absolute;top:50%;z-index:10;transform:translateY(-50%);background:rgba(125,21,21,.2);border:1px solid var(--bdr-r);color:var(--white);width:48px;height:48px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1.1rem;transition:background .2s,border-color .2s;backdrop-filter:blur(4px)}
+.arr:hover{background:var(--red);border-color:var(--red)}
+.arr-p{left:2rem}.arr-n{right:2rem}
+.scap{position:absolute;bottom:2.5rem;right:4rem;z-index:10;font-family:var(--M);font-size:.6rem;letter-spacing:2px;color:var(--mu);text-transform:uppercase}
+.scap span{color:var(--red-mid)}
+@keyframes hf{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+/* BUTTONS */
+.br{display:inline-flex;align-items:center;gap:.75rem;font-family:var(--D);font-weight:700;font-size:.9rem;letter-spacing:3px;text-transform:uppercase;padding:1rem 2.5rem;background:var(--red);color:var(--white);text-decoration:none;clip-path:polygon(12px 0%,100% 0%,calc(100% - 12px) 100%,0% 100%);transition:background .2s;cursor:pointer;border:none;position:relative;overflow:hidden}
+.br::before{content:'';position:absolute;inset:0;background:var(--red-bright);transform:translateX(-100%);transition:transform .3s}
+.br:hover::before{transform:translateX(0)}
+.br>*{position:relative;z-index:1}
+.bg{display:inline-flex;align-items:center;gap:.75rem;font-family:var(--D);font-weight:600;font-size:.9rem;letter-spacing:3px;text-transform:uppercase;padding:1rem 2.5rem;border:1px solid rgba(237,233,227,.2);color:var(--mu2);text-decoration:none;transition:all .25s;cursor:pointer;background:transparent}
+.bg:hover{border-color:var(--white);color:var(--white)}
+/* TICKER */
+.tkr{background:var(--red);padding:.75rem 0;overflow:hidden}
+.tkr-t{display:flex;animation:tick 22s linear infinite;white-space:nowrap}
+.tkr-i{font-family:var(--D);font-weight:700;font-size:.95rem;letter-spacing:5px;text-transform:uppercase;color:rgba(5,5,5,.75);padding:0 2.5rem;flex-shrink:0}
+.tkr-s{color:rgba(5,5,5,.35)}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+/* CANADA BAND */
+.cband{background:var(--b3);border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr);padding:1.75rem 4rem;display:flex;align-items:center;justify-content:space-between}
+.cband-l{display:flex;align-items:center;gap:1.5rem}
+.cband-txt{font-family:var(--M);font-size:.68rem;letter-spacing:2px;color:var(--mu2);text-transform:uppercase}
+.cband-txt strong{color:var(--white);font-weight:normal}
+.cband-cities{display:flex;gap:2rem}
+.cband-c{font-family:var(--D);font-size:1.3rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--mu);transition:color .2s}
+.cband-c:hover{color:var(--red-mid)}
+.cband-c.main{color:var(--white)}
+/* SECTION COMMONS */
+section{padding:7rem 4rem}
+.ey{font-family:var(--M);font-size:.65rem;letter-spacing:4px;color:var(--red-mid);text-transform:uppercase;margin-bottom:1rem;display:flex;align-items:center;gap:.75rem}
+.ey::before{content:'//';opacity:.5}
+.st{font-family:var(--D);font-weight:900;font-size:clamp(2.8rem,5.5vw,5.5rem);text-transform:uppercase;line-height:.92;letter-spacing:-1px;color:var(--white);margin-bottom:1.5rem}
+.st .o{color:transparent;-webkit-text-stroke:1px rgba(237,233,227,.22)}
+.sb{font-size:.94rem;font-weight:300;color:var(--mu2);line-height:1.9}
+/* ABOUT */
+.about{background:var(--b2);display:grid;grid-template-columns:1fr 1.1fr;padding:0}
+.ai{position:relative;overflow:hidden;min-height:580px}
+.ai img{width:100%;height:100%;object-fit:cover;filter:grayscale(20%) contrast(1.1);transition:filter .5s}
+.ai:hover img{filter:grayscale(0%)}
+.ai-ov{position:absolute;inset:0;background:linear-gradient(to right,transparent 55%,var(--b2))}
+.ai-badge{position:absolute;top:3rem;left:3rem;border:1px solid var(--bdr-r);padding:1.5rem 1.75rem;background:rgba(5,5,5,.82);backdrop-filter:blur(8px)}
+.ai-n{font-family:var(--D);font-size:3rem;font-weight:900;color:var(--red-mid);line-height:1}
+.ai-t{font-family:var(--M);font-size:.58rem;letter-spacing:2px;color:var(--mu);text-transform:uppercase;margin-top:.2rem}
+.ar{padding:6rem 4.5rem 6rem 3.5rem;display:flex;flex-direction:column;justify-content:center}
+.pls{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--bdr);margin-top:2.5rem}
+.pl{padding:1.5rem;border-right:1px solid var(--bdr);border-bottom:1px solid var(--bdr);position:relative;transition:background .3s}
+.pl:nth-child(2n){border-right:none}
+.pl:nth-child(n+3){border-bottom:none}
+.pl:hover{background:var(--red-dim)}
+.pl::before{content:'';position:absolute;top:0;left:0;width:0;height:2px;background:var(--red-mid);transition:width .4s}
+.pl:hover::before{width:100%}
+.pl-i{font-family:var(--M);font-size:.6rem;color:var(--red-mid);letter-spacing:2px;margin-bottom:.6rem}
+.pl-t{font-family:var(--D);font-size:1.05rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--white);margin-bottom:.4rem}
+.pl-d{font-size:.78rem;font-weight:300;color:var(--mu);line-height:1.7}
+/* SERVICES */
+.svcs{background:var(--black);position:relative;overflow:hidden}
+.svcs::before{content:'HENOX';position:absolute;font-family:var(--D);font-size:20vw;font-weight:900;color:transparent;-webkit-text-stroke:1px rgba(125,21,21,.04);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;white-space:nowrap;letter-spacing:8px}
+.svcs-hdr{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:.75rem}
+.svcs-sub{font-size:.84rem;font-weight:300;color:var(--mu);margin-bottom:3rem;max-width:520px}
+.svcs-list{display:flex;flex-direction:column;gap:1px;background:var(--bdr);position:relative;z-index:1}
+.si{background:var(--b3);display:grid;grid-template-columns:2.4fr 1fr;transition:background .3s}
+.si:hover{background:var(--b4)}
+.si.feat{border-left:3px solid var(--red-mid)}
+.si-l{padding:2.5rem 2.5rem 2.5rem 2.25rem;border-right:1px solid var(--bdr)}
+.si-r{padding:2.5rem 2rem;display:flex;flex-direction:column;justify-content:center;align-items:flex-end;gap:1.5rem}
+.si-badge{display:inline-block;font-family:var(--M);font-size:.58rem;letter-spacing:2px;text-transform:uppercase;background:var(--red);color:var(--white);padding:.28rem .85rem;margin-bottom:.75rem;clip-path:polygon(6px 0%,100% 0%,calc(100% - 6px) 100%,0% 100%)}
+.si-name{font-family:var(--D);font-size:2.4rem;font-weight:900;text-transform:uppercase;letter-spacing:1px;color:var(--white);line-height:1;margin-bottom:.85rem}
+.si-desc{font-size:.85rem;font-weight:300;color:var(--mu);line-height:1.85;margin-bottom:1.5rem;max-width:580px}
+.si-inc{display:grid;grid-template-columns:1fr 1fr;gap:.4rem 1.5rem}
+.inc{font-size:.8rem;font-weight:300;color:var(--mu2);display:flex;gap:.6rem}
+.inc::before{content:'---';color:var(--red-mid);flex-shrink:0}
+.tiers{display:flex;flex-direction:column;gap:.75rem;width:100%}
+.tier{display:flex;justify-content:space-between;align-items:center;padding:.6rem .85rem;border:1px solid var(--bdr);background:var(--b5)}
+.tier-lbl{font-family:var(--M);font-size:.62rem;letter-spacing:1.5px;color:var(--mu);text-transform:uppercase}
+.tier-sub{font-family:var(--M);font-size:.55rem;color:rgba(237,233,227,.25);margin-top:.1rem}
+.tier-p{font-family:var(--D);font-size:1.4rem;font-weight:900;color:var(--white);line-height:1}
+.tier-p sup{font-size:.7rem;color:var(--red-mid);vertical-align:top;margin-top:.2rem}
+.tier.hl{border-color:var(--bdr-r);background:var(--red-dim)}
+.sbb{font-family:var(--D);font-weight:700;font-size:.8rem;letter-spacing:3px;text-transform:uppercase;padding:.75rem 1.5rem;background:transparent;border:1px solid var(--bdr-r);color:var(--red-mid);text-decoration:none;transition:all .25s;cursor:pointer;width:100%;text-align:center;display:block}
+.sbb:hover{background:var(--red);border-color:var(--red);color:var(--white)}
+/* ADD-ONS */
+.aons{background:var(--b2)}
+.aons-g{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--bdr);margin-top:3rem}
+.ac{background:var(--b3);padding:1.75rem 1.5rem;position:relative;transition:background .3s}
+.ac:hover{background:var(--b4)}
+.ac::before{content:'';position:absolute;top:0;left:0;width:0;height:2px;background:var(--red-mid);transition:width .4s}
+.ac:hover::before{width:100%}
+.ac-name{font-family:var(--D);font-size:1.3rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--white);margin-bottom:.5rem}
+.ac-desc{font-size:.78rem;font-weight:300;color:var(--mu);line-height:1.75;margin-bottom:1rem}
+.ac-p{font-family:var(--D);font-size:1.8rem;font-weight:900;color:var(--red-mid)}
+.ac-p sup{font-size:.85rem;vertical-align:top;margin-top:.3rem}
+/* GALLERY */
+.gallery{background:var(--black)}
+.gal-hdr{text-align:center;max-width:580px;margin:0 auto 4rem}
+.gal-hdr .ey{justify-content:center}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
+.gal-grid a{display:block;position:relative;overflow:hidden;aspect-ratio:1}
+.gal-grid img{width:100%;height:100%;object-fit:cover;filter:grayscale(20%);transition:filter .4s,transform .4s}
+.gal-grid a:hover img{filter:grayscale(0%);transform:scale(1.05)}
+.gal-grid a::after{content:'';position:absolute;inset:0;background:rgba(125,21,21,0);transition:background .3s}
+.gal-grid a:hover::after{background:rgba(125,21,21,.12)}
+/* VIDEO REEL */
+.vid-reel{background:var(--b2);padding:5rem 4rem}
+.vid-hdr{text-align:center;max-width:580px;margin:0 auto 3rem}
+.vid-hdr .ey{justify-content:center}
+.vid-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
+.vid-card{position:relative;overflow:hidden;aspect-ratio:9/16;background:var(--b3)}
+.vid-card video{width:100%;height:100%;object-fit:cover;filter:grayscale(15%);transition:filter .4s}
+.vid-card:hover video{filter:grayscale(0%)}
+.vid-card::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(5,5,5,.6) 0%,transparent 40%);pointer-events:none}
+.vid-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:52px;height:52px;background:rgba(125,21,21,.7);clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);display:flex;align-items:center;justify-content:center;color:var(--white);font-size:1.1rem;z-index:2;pointer-events:none;transition:opacity .3s,background .3s}
+.vid-card.playing .vid-play{opacity:0}
+.vid-tag{position:absolute;bottom:1rem;left:1rem;font-family:var(--M);font-size:.55rem;letter-spacing:2px;text-transform:uppercase;color:var(--mu2);z-index:2}
+@media(max-width:1100px){.vid-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:600px){.vid-grid{gap:2px}}
+/* PROCESS */
+.proc{background:var(--b2)}
+.proc-r{display:grid;grid-template-columns:repeat(5,1fr);margin-top:4rem;position:relative}
+.proc-r::before{content:'';position:absolute;top:1.8rem;left:8%;right:8%;height:1px;background:linear-gradient(to right,transparent,rgba(125,21,21,.3) 20%,rgba(125,21,21,.3) 80%,transparent)}
+.stp{padding:0 1.25rem;text-align:center}
+.stp-d{width:14px;height:14px;background:var(--red-mid);clip-path:polygon(50% 0%,100% 50%,50% 100%,0% 50%);margin:1.2rem auto 1.75rem}
+.stp-n{font-family:var(--M);font-size:.6rem;letter-spacing:3px;color:var(--red-mid);margin-bottom:.6rem}
+.stp-name{font-family:var(--D);font-size:1.2rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--white);margin-bottom:.65rem}
+.stp-desc{font-size:.77rem;font-weight:300;color:var(--mu);line-height:1.7}
+/* TESTI */
+.testi{background:var(--black)}
+.testi-hdr{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:3.5rem}
+.testi-sc{font-family:var(--D);font-size:5rem;font-weight:900;color:transparent;-webkit-text-stroke:1px var(--red-mid);letter-spacing:2px;line-height:1}
+.tg{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--bdr)}
+.tc{background:var(--b3);padding:2.25rem 2rem;position:relative;overflow:hidden;transition:background .3s}
+.tc:hover{background:var(--b4)}
+.tc::before{content:'"';position:absolute;top:-1.5rem;right:1rem;font-family:var(--D);font-size:9rem;font-weight:900;color:var(--red);opacity:.05;line-height:1;pointer-events:none}
+.tc-st{color:var(--red-mid);font-size:.7rem;letter-spacing:2px;margin-bottom:.9rem}
+.tc-txt{font-size:.87rem;font-style:italic;font-weight:300;color:var(--mu2);line-height:1.95;margin-bottom:1.5rem}
+.tc-au{display:flex;gap:.85rem;align-items:center}
+.tc-av{width:38px;height:38px;clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);background:var(--red-dim);border:1px solid var(--bdr-r);display:flex;align-items:center;justify-content:center;font-family:var(--D);font-size:.9rem;font-weight:900;color:var(--red-mid);flex-shrink:0}
+.tc-name{font-family:var(--D);font-size:1rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--white)}
+.tc-veh{font-family:var(--M);font-size:.6rem;letter-spacing:1px;color:var(--mu);margin-top:.1rem}
+/* CTA */
+.ctab{background:var(--red);padding:5rem 4rem;display:flex;justify-content:space-between;align-items:center;position:relative;overflow:hidden}
+.ctab::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(5,5,5,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(5,5,5,.07) 1px,transparent 1px);background-size:40px 40px}
+.ctab-t{position:relative}
+.ctab-t h2{font-family:var(--D);font-size:clamp(2.5rem,5vw,5rem);font-weight:900;text-transform:uppercase;letter-spacing:-1px;line-height:.92;color:var(--white)}
+.ctab-t p{font-size:.9rem;font-weight:300;color:rgba(237,233,227,.7);margin-top:1rem}
+.ctab-t p strong{color:var(--white);font-weight:500}
+.bw{position:relative;display:inline-flex;align-items:center;gap:1rem;font-family:var(--D);font-weight:900;font-size:1rem;letter-spacing:4px;text-transform:uppercase;padding:1.25rem 3rem;background:var(--white);color:var(--red);clip-path:polygon(16px 0%,100% 0%,calc(100% - 16px) 100%,0% 100%);text-decoration:none;cursor:pointer;transition:all .25s;flex-shrink:0}
+.bw:hover{background:var(--black);color:var(--white)}
+/* CONTACT */
+.ctct{background:var(--black);display:grid;grid-template-columns:1fr 1fr;padding:0}
+.cl{background:var(--b3);padding:6rem 4rem;border-right:1px solid var(--bdr);display:flex;flex-direction:column;justify-content:center}
+.cr{background:var(--b2);padding:6rem 4rem;display:flex;flex-direction:column;justify-content:center}
+.ci-row{margin-top:2.5rem;display:flex;flex-direction:column;gap:1.75rem}
+.ci{display:flex;gap:1.25rem}
+.ci-ic{width:38px;height:38px;flex-shrink:0;border:1px solid var(--bdr-r);display:flex;align-items:center;justify-content:center;font-family:var(--M);font-size:.6rem;color:var(--red-mid)}
+.ci-lb{font-family:var(--M);font-size:.58rem;letter-spacing:2px;text-transform:uppercase;color:var(--red-mid);margin-bottom:.25rem}
+.ci-vl{font-size:.88rem;font-weight:300;color:var(--mu2)}
+.ci-vl a{color:var(--mu2);text-decoration:none;transition:color .2s}
+.ci-vl a:hover{color:var(--white)}
+.sa{margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--bdr)}
+.sa-lbl{font-family:var(--M);font-size:.6rem;letter-spacing:3px;text-transform:uppercase;color:var(--mu);margin-bottom:.75rem}
+.sa-cities{display:flex;gap:.75rem;flex-wrap:wrap}
+.sa-c{font-family:var(--D);font-size:1.1rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--white);padding:.35rem .85rem;border:1px solid var(--bdr-r)}
+.sa-c.main{background:var(--red-dim)}
+/* FORM */
+.fg{margin-bottom:1.15rem}
+.fl{font-family:var(--M);font-size:.58rem;letter-spacing:2px;text-transform:uppercase;color:var(--mu);display:block;margin-bottom:.45rem}
+.fi,.fsel,.fta{width:100%;background:var(--b4);border:1px solid var(--bdr);border-bottom:1px solid rgba(237,233,227,.12);color:var(--white);padding:.85rem 1rem;font-family:var(--B);font-size:.87rem;outline:none;transition:border-color .2s,background .2s;appearance:none}
+.fi::placeholder,.fta::placeholder{color:rgba(237,233,227,.18)}
+.fi:focus,.fsel:focus,.fta:focus{border-color:var(--red-mid);background:var(--b5)}
+.fi.err{border-color:var(--red-bright);background:rgba(181,32,32,.06)}
+.fta{min-height:90px;resize:vertical}
+.fsel{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%239B1C1C'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center;cursor:pointer}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.pe{display:none;margin:.75rem 0 1rem;padding:.85rem 1.15rem;background:var(--red-dim);border:1px solid var(--bdr-r)}
+.pe.show{display:flex;justify-content:space-between;align-items:center}
+.pe-l{font-family:var(--M);font-size:.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--mu)}
+.pe-n{font-family:var(--M);font-size:.58rem;color:var(--mu);margin-top:.2rem}
+.pe-a{font-family:var(--D);font-size:1.8rem;font-weight:900;color:var(--white)}
+.pe-a sup{font-size:.75rem;color:var(--red-mid);vertical-align:top;margin-top:.3rem}
+/* ADD-ON CHECKBOXES */
+.ao-checks{display:grid;grid-template-columns:1fr 1fr;gap:.5rem .75rem}
+.ao-chk{display:flex;align-items:center;gap:.6rem;cursor:pointer;padding:.45rem .65rem;border:1px solid var(--bdr);background:var(--b4);transition:background .2s,border-color .2s}
+.ao-chk:hover{background:var(--b5)}
+.ao-chk input{accent-color:var(--red-mid);width:14px;height:14px;cursor:pointer}
+.ao-chk .ao-lbl{font-size:.78rem;font-weight:300;color:var(--mu2);flex:1}
+.ao-chk .ao-pr{font-family:var(--M);font-size:.62rem;color:var(--red-mid);letter-spacing:1px}
+.ao-chk.checked{border-color:var(--bdr-r);background:var(--red-dim)}
+/* FORM STATUS */
+.form-msg{margin-top:1rem;padding:.85rem 1.15rem;font-family:var(--M);font-size:.68rem;letter-spacing:1px;display:none}
+.form-msg.success{display:block;background:rgba(21,125,45,.12);border:1px solid rgba(21,125,45,.3);color:#6dbe82}
+.form-msg.error{display:block;background:var(--red-dim);border:1px solid var(--bdr-r);color:var(--red-mid)}
+/* FOOTER */
+footer{background:var(--black);border-top:1px solid var(--bdr);padding:3rem 4rem;display:flex;justify-content:space-between;align-items:center}
+.fl-logo{font-family:var(--D);font-size:1.6rem;font-weight:900;letter-spacing:6px;color:rgba(237,233,227,.28)}
+.fl-logo span{color:rgba(125,21,21,.55)}
+.fl-links{display:flex;gap:2.5rem}
+.fl-links a{font-family:var(--M);font-size:.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--mu);text-decoration:none;transition:color .2s}
+.fl-links a:hover{color:var(--white)}
+.fl-copy{font-family:var(--M);font-size:.6rem;letter-spacing:1px;color:var(--mu)}
+.fl-bottom{display:flex;justify-content:center;gap:2rem;padding:1.25rem 4rem 2rem;background:var(--black)}
+.fl-bottom a{font-family:var(--M);font-size:.55rem;letter-spacing:1px;color:var(--mu);text-decoration:none;transition:color .2s}
+.fl-bottom a:hover{color:var(--white)}
+/* REVEAL */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
+.rv.in{opacity:1;transform:translateY(0)}
+.rv-l{opacity:0;transform:translateX(-28px);transition:opacity .8s ease,transform .8s ease}
+.rv-l.in{opacity:1;transform:translateX(0)}
+/* RESPONSIVE */
+@media(max-width:1100px){
+  nav{padding:1.25rem 2rem}
+  .nls{display:none}
+  section{padding:5rem 2rem}
+  .hero-content{padding:0 2rem 4rem}
+  .h-h1{font-size:5rem}
+  .h-stats{display:none}
+  .cband{padding:1.5rem 2rem;flex-direction:column;gap:1rem;align-items:flex-start}
+  .about{grid-template-columns:1fr}
+  .ai{height:45vh;min-height:auto}
+  .ar{padding:3.5rem 2rem}
+  .si{grid-template-columns:1fr}
+  .si-r{padding:0 2.25rem 2rem;align-items:flex-start}
+  .si-inc{grid-template-columns:1fr}
+  .aons-g{grid-template-columns:1fr 1fr}
+  .gal-grid{grid-template-columns:repeat(2,1fr)}
+  .proc-r{grid-template-columns:1fr 1fr}
+  .proc-r::before{display:none}
+  .tg{grid-template-columns:1fr}
+  .testi-hdr{flex-direction:column;gap:1rem;align-items:flex-start}
+  .ctab{flex-direction:column;gap:2rem;text-align:center;padding:3rem 2rem}
+  .ctct{grid-template-columns:1fr}
+  .cl,.cr{padding:3.5rem 2rem}
+  .fr{grid-template-columns:1fr}
+  .ao-checks{grid-template-columns:1fr}
+  footer{flex-direction:column;gap:1.5rem;text-align:center;padding:2rem}
+}
+@media(max-width:600px){
+  .h-h1{font-size:3.5rem}
+  .aons-g{grid-template-columns:1fr}
+  .gal-grid{grid-template-columns:1fr 1fr}
+}
+/* NOSCRIPT */
+.noscript-hero{padding:12rem 4rem 6rem;background:var(--b2)}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip">Skip to content</a>
+
+<noscript>
+<style>
+  .cur,.cur-ring,.hero,.tkr{display:none!important}
+  .rv,.rv-l{opacity:1!important;transform:none!important}
+</style>
+<div class="noscript-hero">
+  <div class="ey">Mobile Detailing — Guelph & Toronto, ON</div>
+  <h1 class="st" style="margin-bottom:1.5rem">HENOX<br><span class="o">DETAILING</span></h1>
+  <p class="sb">Premium mobile car detailing. Enable JavaScript for the full experience.</p>
+</div>
+</noscript>
+
+<div class="cur" id="cur"></div>
+<div class="cur-ring" id="curRing"></div>
+
+<!-- NAV -->
+<nav id="topNav" role="navigation" aria-label="Main navigation">
+  <a href="#" class="nl" aria-label="HENOX home">HEN<span>O</span>X</a>
+  <ul class="nls">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nb">Book Now</a>
+</nav>
+
+<!-- HERO SLIDER -->
+<div class="hero" id="hero" role="region" aria-label="Image slideshow">
+  <div class="slide s1 active" aria-hidden="false"><div class="slide-bg" role="img" aria-label="BMW M4 front view after full detail"></div><div class="slide-ov"></div></div>
+  <div class="slide s2" aria-hidden="true"><div class="slide-bg" role="img" aria-label="Corvette C8 detailed in client driveway"></div><div class="slide-ov"></div></div>
+  <div class="slide s3" aria-hidden="true"><div class="slide-bg" role="img" aria-label="Black Corvette C8 rear showing mirror-finish paint"></div><div class="slide-ov"></div></div>
+  <div class="slide s4" aria-hidden="true"><div class="slide-bg" role="img" aria-label="BMW M4 side detail with dressed tires and clean wheels"></div><div class="slide-ov"></div></div>
+  <div class="slide s5" aria-hidden="true"><div class="slide-bg" role="img" aria-label="Corvette C8 side showing flawless paint correction"></div><div class="slide-ov"></div></div>
+
+  <div class="hero-grid"></div>
+
+  <div class="h-stats">
+    <div class="hst"><div class="hst-n">1,200<sup>+</sup></div><div class="hst-l">Cars Detailed</div><div class="hst-ln"></div></div>
+    <div class="hst"><div class="hst-n">8<sup>yr</sup></div><div class="hst-l">In Business</div><div class="hst-ln"></div></div>
+    <div class="hst"><div class="hst-n">5.0<sup>&#9733;</sup></div><div class="hst-l">Rating</div><div class="hst-ln"></div></div>
+  </div>
+
+  <div class="hero-content" id="main">
+    <div class="h-ey">Mobile Detailing — Guelph &amp; Toronto, ON</div>
+    <h1 class="h-h1">BUILT FOR<br><span class="out">PERFECTION</span></h1>
+    <div class="h-sub">We Come To You.</div>
+    <div class="h-btns">
+      <a href="#services" class="br"><span>Our Services</span><span>&#8594;</span></a>
+      <a href="#contact" class="bg">Get a Quote</a>
+    </div>
+  </div>
+
+  <button class="arr arr-p" id="arrP" aria-label="Previous slide">&#8592;</button>
+  <button class="arr arr-n" id="arrN" aria-label="Next slide">&#8594;</button>
+  <div class="dots" id="dotWrap" role="tablist" aria-label="Slide navigation">
+    <button class="dot active" role="tab" aria-label="Slide 1" aria-selected="true"></button>
+    <button class="dot" role="tab" aria-label="Slide 2" aria-selected="false"></button>
+    <button class="dot" role="tab" aria-label="Slide 3" aria-selected="false"></button>
+    <button class="dot" role="tab" aria-label="Slide 4" aria-selected="false"></button>
+    <button class="dot" role="tab" aria-label="Slide 5" aria-selected="false"></button>
+  </div>
+  <div class="scap"><span id="snum">01</span> / <span>05</span></div>
+</div>
+
+<!-- TICKER -->
+<div class="tkr" aria-hidden="true">
+  <div class="tkr-t">
+    <span class="tkr-i">In &amp; Out Detail <span class="tkr-s">&#9670;</span></span>
+    <span class="tkr-i">Interior Detail <span class="tkr-s">&#9670;</span></span>
+    <span class="tkr-i">Premium Wash <span class="tkr-s">&#9670;</span></span>
+    <span class="tkr-i">Engine Bay <span class="tkr-s">&#9670;</span></span>
+    <span class="tkr-i">Paint Correction <span class="tkr-s">&#9670;</span></span>
+    <span class="tkr-i">We Come To You <span class="tkr-s">&#9670;</span></span>
+    <span class="tkr-i">Guelph &amp; Toronto <span class="tkr-s">&#9670;</span></span>
+    <span class="tkr-i">In &amp; Out Detail <span class="tkr-s">&#9670;</span></span>
+    <span class="tkr-i">Interior Detail <span class="tkr-s">&#9670;</span></span>
+    <span class="tkr-i">Premium Wash <span class="tkr-s">&#9670;</span></span>
+    <span class="tkr-i">Engine Bay <span class="tkr-s">&#9670;</span></span>
+    <span class="tkr-i">Paint Correction <span class="tkr-s">&#9670;</span></span>
+    <span class="tkr-i">We Come To You <span class="tkr-s">&#9670;</span></span>
+    <span class="tkr-i">Guelph &amp; Toronto <span class="tkr-s">&#9670;</span></span>
+  </div>
+</div>
+
+<!-- CANADA BAND -->
+<div class="cband">
+  <div class="cband-l">
+    <span style="font-size:1.4rem" aria-hidden="true">&#127809;</span>
+    <div class="cband-txt">Proudly serving <strong>Ontario, Canada</strong> — We bring the detail to your driveway</div>
+  </div>
+  <div class="cband-cities">
+    <div class="cband-c main">Guelph</div>
+    <div class="cband-c">Kitchener</div>
+    <div class="cband-c">Cambridge</div>
+    <div class="cband-c">Mississauga</div>
+    <div class="cband-c">Toronto</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="ai rv-l">
+    <img src="images/bmw-interior-door.jpg" alt="BMW interior after full HENOX interior detail — spotless dashboard, clean leather, and dressed surfaces" loading="lazy" width="800" height="800">
+    <div class="ai-ov"></div>
+    <div class="ai-badge"><div class="ai-n">8+</div><div class="ai-t">Years of craft</div></div>
+  </div>
+  <div class="ar">
+    <div class="ey rv">Who We Are</div>
+    <h2 class="st rv">DETAIL IS<br><span class="o">EVERYTHING</span></h2>
+    <p class="sb rv">We're a mobile detailing operation based in Guelph, Ontario — serving the GTA corridor. We show up at your home, office, or wherever your car is. No shortcuts, no compromises.</p>
+    <div class="pls rv">
+      <div class="pl"><div class="pl-i">// 01</div><div class="pl-t">Mobile Service</div><div class="pl-d">We come to you. Your driveway, your schedule.</div></div>
+      <div class="pl"><div class="pl-i">// 02</div><div class="pl-t">Pro Products</div><div class="pl-d">Gyeon, Sonax, Gtechniq — only the best.</div></div>
+      <div class="pl"><div class="pl-i">// 03</div><div class="pl-t">Strict Process</div><div class="pl-d">Multi-step protocol. Every time, every car.</div></div>
+      <div class="pl"><div class="pl-i">// 04</div><div class="pl-t">Ontario Based</div><div class="pl-d">Guelph to Toronto — we cover the corridor.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="svcs" id="services">
+  <div class="svcs-hdr">
+    <div>
+      <div class="ey rv">What We Offer</div>
+      <h2 class="st rv">OUR <span class="o">SERVICES</span></h2>
+    </div>
+    <a href="#contact" class="bg rv">Get a Quote &#8594;</a>
+  </div>
+  <p class="svcs-sub rv">Mobile service across Guelph, Kitchener, Cambridge, Mississauga &amp; Toronto. All prices in CAD.</p>
+
+  <div class="svcs-list">
+
+    <!-- IN & OUT -->
+    <div class="si feat rv">
+      <div class="si-l">
+        <div class="si-badge">Most Popular</div>
+        <div class="si-name">In &amp; Out Detail</div>
+        <p class="si-desc">Our most complete package — a full interior and exterior treatment from top to bottom. The perfect reset for any vehicle.</p>
+        <div class="si-inc">
+          <div class="inc">Full interior vacuum (carpets, seats, trunk)</div>
+          <div class="inc">Dashboard, console &amp; door panel cleaning</div>
+          <div class="inc">Steam cleaning of all fabric surfaces</div>
+          <div class="inc">Floor mat cleaning &amp; rubber dressing</div>
+          <div class="inc">Door jamb detailing</div>
+          <div class="inc">Wheels &amp; wheel well cleaning</div>
+          <div class="inc">Exterior hand wash — premium soap</div>
+          <div class="inc">Microfiber dry — zero water spots</div>
+          <div class="inc">Exterior glass cleaning</div>
+          <div class="inc">Premium tire dressing — satin finish</div>
+        </div>
+      </div>
+      <div class="si-r">
+        <div class="tiers">
+          <div class="tier"><div><div class="tier-lbl">6-8 Seats</div><div class="tier-sub">Minivan</div></div><div class="tier-p"><sup>$</sup>235</div></div>
+          <div class="tier hl"><div><div class="tier-lbl">Sedan</div><div class="tier-sub">Most common</div></div><div class="tier-p"><sup>$</sup>285</div></div>
+          <div class="tier"><div><div class="tier-lbl">SUV &amp; Truck</div><div class="tier-sub">Full size</div></div><div class="tier-p"><sup>$</sup>335</div></div>
+        </div>
+        <a href="#contact" class="sbb">Book Now</a>
+      </div>
+    </div>
+
+    <!-- INTERIOR -->
+    <div class="si rv">
+      <div class="si-l">
+        <div class="si-name">Interior Detail</div>
+        <p class="si-desc">Deep clean focused entirely on the inside — from air vents to floor mats. Steam sanitized, deodorized, and surface-protected.</p>
+        <div class="si-inc">
+          <div class="inc">Compressed air blowout of all crevices</div>
+          <div class="inc">Thorough vacuum — carpets, seats, upholstery</div>
+          <div class="inc">Dashboard, console &amp; door panel cleaning</div>
+          <div class="inc">Steam cleaning of fabric seats &amp; carpets</div>
+          <div class="inc">Disinfection of high-touch surfaces</div>
+          <div class="inc">Interior glass cleaning</div>
+          <div class="inc">Full air vent deep clean</div>
+          <div class="inc">Protective surface treatment</div>
+          <div class="inc">Floor mat cleaning</div>
+          <div class="inc">Door jamb detailing</div>
+        </div>
+      </div>
+      <div class="si-r">
+        <div class="tiers">
+          <div class="tier"><div><div class="tier-lbl">6-8 Seats</div></div><div class="tier-p"><sup>$</sup>175</div></div>
+          <div class="tier hl"><div><div class="tier-lbl">Sedan</div></div><div class="tier-p"><sup>$</sup>225</div></div>
+          <div class="tier"><div><div class="tier-lbl">SUV &amp; Truck</div></div><div class="tier-p"><sup>$</sup>275</div></div>
+        </div>
+        <a href="#contact" class="sbb">Book Now</a>
+      </div>
+    </div>
+
+    <!-- PREMIUM WASH -->
+    <div class="si rv">
+      <div class="si-l">
+        <div class="si-name">Premium Wash</div>
+        <p class="si-desc">A proper exterior wash done entirely by hand — not a machine. pH-balanced soap, foam lift, microfiber dry, and streak-free glass every time.</p>
+        <div class="si-inc">
+          <div class="inc">pH-balanced premium soap</div>
+          <div class="inc">Foam application — lifts dirt &amp; grime</div>
+          <div class="inc">Soft-touch hand wash (microfiber mitts)</div>
+          <div class="inc">Wheel &amp; tire cleaning + wheel wells</div>
+          <div class="inc">Plush microfiber towel dry</div>
+          <div class="inc">Streak-free exterior glass clean</div>
+          <div class="inc">Premium tire dressing — satin finish</div>
+        </div>
+      </div>
+      <div class="si-r">
+        <div class="tiers">
+          <div class="tier"><div><div class="tier-lbl">6-8 Seats</div></div><div class="tier-p"><sup>$</sup>60</div></div>
+          <div class="tier hl"><div><div class="tier-lbl">Sedan</div></div><div class="tier-p"><sup>$</sup>95</div></div>
+          <div class="tier"><div><div class="tier-lbl">SUV &amp; Truck</div></div><div class="tier-p"><sup>$</sup>115</div></div>
+        </div>
+        <a href="#contact" class="sbb">Book Now</a>
+      </div>
+    </div>
+
+    <!-- ENGINE BAY -->
+    <div class="si rv">
+      <div class="si-l">
+        <div class="si-name">Engine Bay Detail</div>
+        <p class="si-desc">A clean engine bay makes maintenance easier and protects components long-term. We degrease, clean, dress, and inspect everything under the hood.</p>
+        <div class="si-inc">
+          <div class="inc">Safe degreasing of all engine components</div>
+          <div class="inc">High-pressure steam &amp; water clean</div>
+          <div class="inc">Hose &amp; plastic component detailing</div>
+          <div class="inc">Full dirt &amp; grease removal</div>
+          <div class="inc">Plastic &amp; rubber conditioning</div>
+          <div class="inc">Engine cover dressing</div>
+          <div class="inc">Careful dry of all components</div>
+          <div class="inc">Final inspection</div>
+        </div>
+      </div>
+      <div class="si-r">
+        <div class="tiers">
+          <div class="tier hl" style="flex-direction:column;align-items:center;justify-content:center;gap:.25rem;text-align:center;">
+            <div class="tier-lbl">Flat Rate — All Vehicles</div>
+            <div class="tier-p"><sup>$</sup>60</div>
+          </div>
+        </div>
+        <a href="#contact" class="sbb">Book Now</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ADD-ONS -->
+<section class="aons" id="addons">
+  <div class="ey rv">Enhancements</div>
+  <h2 class="st rv">ADD-<span class="o">ONS</span></h2>
+  <div class="aons-g">
+    <div class="ac rv"><div class="ac-name">Salt Stain Removal</div><p class="ac-desc">Treatment, scrubbing, extraction, and steam clean for a salt-free interior finish.</p><div class="ac-p"><sup>$</sup>20</div></div>
+    <div class="ac rv"><div class="ac-name">Pet Hair Removal</div><p class="ac-desc">Specialized tools for deep pet hair extraction from upholstery, carpets, and crevices.</p><div class="ac-p"><sup>$</sup>35</div></div>
+    <div class="ac rv"><div class="ac-name">Fabric Stain Removal</div><p class="ac-desc">Targeted stain treatment, extraction, and steam cleaning for a spotless finish.</p><div class="ac-p"><sup>$</sup>20</div></div>
+    <div class="ac rv"><div class="ac-name">Wax Application</div><p class="ac-desc">Premium wax applied and hand-buffed for enhanced gloss and short-term paint protection.</p><div class="ac-p"><sup>$</sup>20</div></div>
+    <div class="ac rv"><div class="ac-name">Leather Conditioning</div><p class="ac-desc">Deep clean and conditioning treatment. Restores softness and prevents cracking.</p><div class="ac-p"><sup>$</sup>15</div></div>
+    <div class="ac rv" style="background:var(--red-dim);border-left:2px solid var(--red-mid)"><div class="ac-name">Not Sure?</div><p class="ac-desc">Book a custom quote — we'll recommend the right combo for your vehicle and budget.</p><a href="#contact" class="sbb" style="display:inline-block;width:auto;padding:.6rem 1.25rem;margin-top:.5rem">Get a Quote &#8594;</a></div>
+  </div>
+</section>
+
+<!-- GALLERY (replaces Before/After with real work photos) -->
+<section class="gallery" id="work">
+  <div class="gal-hdr rv">
+    <div class="ey">Our Work</div>
+    <h2 class="st" style="margin-bottom:.75rem">REAL <span class="o">RESULTS</span></h2>
+    <p style="font-size:.85rem;color:var(--mu);font-weight:300">Real cars, real clients, real detail work by HENOX.</p>
+  </div>
+  <div class="gal-grid rv">
+    <a href="images/bmw-front.jpg" target="_blank" rel="noopener"><img src="images/bmw-front.jpg" alt="BMW M4 front view — full exterior detail" loading="lazy" width="400" height="400"></a>
+    <a href="images/bmw-interior-dash.jpg" target="_blank" rel="noopener"><img src="images/bmw-interior-dash.jpg" alt="BMW M4 interior dashboard after detail" loading="lazy" width="400" height="400"></a>
+    <a href="images/corvette-rear.jpg" target="_blank" rel="noopener"><img src="images/corvette-rear.jpg" alt="Corvette C8 rear quarter — mirror-finish paint" loading="lazy" width="400" height="400"></a>
+    <a href="images/corvette-interior.jpg" target="_blank" rel="noopener"><img src="images/corvette-interior.jpg" alt="Corvette C8 interior with protective steering cover during detailing" loading="lazy" width="400" height="400"></a>
+    <a href="images/bmw-side.jpg" target="_blank" rel="noopener"><img src="images/bmw-side.jpg" alt="BMW M4 side — clean wheels and dressed tires" loading="lazy" width="400" height="400"></a>
+    <a href="images/bmw-interior-seat.jpg" target="_blank" rel="noopener"><img src="images/bmw-interior-seat.jpg" alt="BMW carbon fiber seat back — interior detail" loading="lazy" width="400" height="400"></a>
+    <a href="images/corvette-side.jpg" target="_blank" rel="noopener"><img src="images/corvette-side.jpg" alt="Corvette C8 side showing flawless paint reflection" loading="lazy" width="400" height="400"></a>
+    <a href="images/corvette-rear-close.jpg" target="_blank" rel="noopener"><img src="images/corvette-rear-close.jpg" alt="Corvette C8 rear close-up — tail lights and glossy paint" loading="lazy" width="400" height="400"></a>
+  </div>
+</section>
+
+<!-- VIDEO REEL -->
+<section class="vid-reel" id="videos">
+  <div class="vid-hdr rv">
+    <div class="ey">In Action</div>
+    <h2 class="st" style="margin-bottom:.75rem">THE <span class="o">PROCESS</span></h2>
+    <p style="font-size:.85rem;color:var(--mu);font-weight:300">Watch the craft behind the finish. Tap to play.</p>
+  </div>
+  <div class="vid-grid rv">
+    <div class="vid-card" onclick="tvid(this)">
+      <video src="images/clip-1.mp4" loop muted playsinline preload="metadata"></video>
+      <div class="vid-play">&#9654;</div>
+      <div class="vid-tag">Detail Clip 01</div>
+    </div>
+    <div class="vid-card" onclick="tvid(this)">
+      <video src="images/clip-2.mp4" loop muted playsinline preload="metadata"></video>
+      <div class="vid-play">&#9654;</div>
+      <div class="vid-tag">Detail Clip 02</div>
+    </div>
+    <div class="vid-card" onclick="tvid(this)">
+      <video src="images/clip-3.mp4" loop muted playsinline preload="metadata"></video>
+      <div class="vid-play">&#9654;</div>
+      <div class="vid-tag">Detail Clip 03</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="proc" id="process">
+  <div class="ey rv">How It Works</div>
+  <h2 class="st rv">OUR <span class="o">PROCESS</span></h2>
+  <div class="proc-r">
+    <div class="stp rv"><div class="stp-n">// 01</div><div class="stp-d"></div><div class="stp-name">Book Online</div><div class="stp-desc">Fill out the quote form — we confirm your slot within 24 hours.</div></div>
+    <div class="stp rv"><div class="stp-n">// 02</div><div class="stp-d"></div><div class="stp-name">We Show Up</div><div class="stp-desc">Fully equipped van arrives at your home, office, or anywhere your car is parked.</div></div>
+    <div class="stp rv"><div class="stp-n">// 03</div><div class="stp-d"></div><div class="stp-name">Decontaminate</div><div class="stp-desc">Pre-wash, iron decon, clay bar — your vehicle stripped back to clean.</div></div>
+    <div class="stp rv"><div class="stp-n">// 04</div><div class="stp-d"></div><div class="stp-name">Full Detail</div><div class="stp-desc">Interior and exterior treated with our proven multi-step protocol.</div></div>
+    <div class="stp rv"><div class="stp-n">// 05</div><div class="stp-d"></div><div class="stp-name">Handover</div><div class="stp-desc">Final inspection, care tips, and your car returned spotless.</div></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testi" id="reviews">
+  <div class="testi-hdr">
+    <div>
+      <div class="ey rv">Client Reviews</div>
+      <h2 class="st rv">WHAT THEY <span class="o">SAY</span></h2>
+    </div>
+    <div class="testi-sc rv">5.0</div>
+  </div>
+  <div class="tg">
+    <div class="tc rv">
+      <div class="tc-st">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="tc-txt">Booked the In & Out Detail for my Accord — they came right to my driveway in Guelph. Took about 3 hours and the car looked genuinely brand new inside. Worth every dollar.</p>
+      <div class="tc-au"><div class="tc-av">AK</div><div><div class="tc-name">Amir K.</div><div class="tc-veh">2019 Honda Accord — Guelph, ON</div></div></div>
+    </div>
+    <div class="tc rv">
+      <div class="tc-st">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="tc-txt">My truck had dog hair everywhere and salt stains from the winter. They got everything out — and I mean everything. Insane attention to detail. Already booked again next month.</p>
+      <div class="tc-au"><div class="tc-av">TM</div><div><div class="tc-name">Tyler M.</div><div class="tc-veh">2021 Ford F-150 — Kitchener, ON</div></div></div>
+    </div>
+    <div class="tc rv">
+      <div class="tc-st">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="tc-txt">I've tried three mobile detailers in the GTA. HENOX is on a completely different level. Showed up on time, communicated clearly, result was flawless. Booking again for sure.</p>
+      <div class="tc-au"><div class="tc-av">SP</div><div><div class="tc-name">Sara P.</div><div class="tc-veh">2022 BMW X5 — Mississauga, ON</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="ctab rv">
+  <div class="ctab-t">
+    <h2>Ready for the<br>HENOX treatment?</h2>
+    <p>Serving <strong>Guelph, Kitchener, Cambridge, Mississauga &amp; Toronto</strong><br>We come to you — book and we handle the rest.</p>
+  </div>
+  <a href="#contact" class="bw">Book Your Detail &#8594;</a>
+</div>
+
+<!-- CONTACT -->
+<section class="ctct" id="contact">
+  <div class="cl">
+    <div class="ey rv">Get In Touch</div>
+    <h2 class="st rv">BOOK YOUR<br><span class="o">DETAIL</span></h2>
+    <p class="sb rv">We respond within 24 hours. Limited slots available each week — book early to lock in your date.</p>
+    <div class="ci-row">
+      <div class="ci rv"><div class="ci-ic">&#9678;</div><div><div class="ci-lb">Based In</div><div class="ci-vl">50 Doyle Drive<br>Guelph, Ontario</div></div></div>
+      <div class="ci rv"><div class="ci-ic">&#10022;</div><div><div class="ci-lb">Phone</div><div class="ci-vl"><a href="tel:5194000367">(519) 400-0367</a></div></div></div>
+      <div class="ci rv"><div class="ci-ic">&#9993;</div><div><div class="ci-lb">Email</div><div class="ci-vl"><a href="mailto:Henihenihabesha@gmail.com">Henihenihabesha@gmail.com</a></div></div></div>
+      <div class="ci rv"><div class="ci-ic">&#9672;</div><div><div class="ci-lb">Hours</div><div class="ci-vl">Mon - Fri: 8am - 6pm<br>Saturday: 8am - 4pm<br>Sunday: Closed</div></div></div>
+    </div>
+    <div class="sa rv">
+      <div class="sa-lbl">Service Area</div>
+      <div class="sa-cities">
+        <div class="sa-c main">Guelph</div>
+        <div class="sa-c">Kitchener</div>
+        <div class="sa-c">Cambridge</div>
+        <div class="sa-c">Mississauga</div>
+        <div class="sa-c">Toronto</div>
+      </div>
+    </div>
+  </div>
+  <div class="cr">
+    <form id="quoteForm" action="https://formsubmit.co/Henihenihabesha@gmail.com" method="POST">
+      <!-- FormSubmit config -->
+      <input type="hidden" name="_subject" value="HENOX Quote Request">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" style="display:none">
+      <input type="hidden" name="_next" id="formNext">
+
+      <div class="fr">
+        <div class="fg">
+          <label class="fl" for="fn">First Name</label>
+          <input type="text" class="fi" id="fn" name="First Name" placeholder="John" required>
+        </div>
+        <div class="fg">
+          <label class="fl" for="ln">Last Name</label>
+          <input type="text" class="fi" id="ln" name="Last Name" placeholder="Doe">
+        </div>
+      </div>
+      <div class="fg">
+        <label class="fl" for="em">Email</label>
+        <input type="email" class="fi" id="em" name="Email" placeholder="john@email.com" required>
+      </div>
+      <div class="fg">
+        <label class="fl" for="ph">Phone</label>
+        <input type="tel" class="fi" id="ph" name="Phone" placeholder="(519) 000-0000">
+      </div>
+      <div class="fr">
+        <div class="fg">
+          <label class="fl" for="fsvc">Service</label>
+          <select class="fsel fi" id="fsvc" name="Service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="In &amp; Out Detail">In &amp; Out Detail</option>
+            <option value="Interior Detail">Interior Detail</option>
+            <option value="Premium Wash">Premium Wash</option>
+            <option value="Engine Bay Detail">Engine Bay Detail</option>
+            <option value="Custom / Multiple Services">Custom / Multiple Services</option>
+          </select>
+        </div>
+        <div class="fg">
+          <label class="fl" for="fvt">Vehicle Type</label>
+          <select class="fsel fi" id="fvt" name="Vehicle Type" required>
+            <option value="" disabled selected>Select vehicle</option>
+            <option value="6-8 Seats (Minivan)">6-8 Seats (Minivan)</option>
+            <option value="Sedan / Coupe / Hatchback">Sedan / Coupe / Hatchback</option>
+            <option value="SUV / Truck">SUV / Truck</option>
+          </select>
+        </div>
+      </div>
+      <div class="fg">
+        <label class="fl" for="fv">Vehicle (Year, Make, Model)</label>
+        <input type="text" class="fi" id="fv" name="Vehicle" placeholder="e.g. 2021 Honda CR-V">
+      </div>
+      <div class="pe" id="pe">
+        <div><div class="pe-l">Estimated Quote (CAD)</div><div class="pe-n">Final price confirmed at booking</div></div>
+        <div class="pe-a" id="pea"><sup>$</sup>---</div>
+      </div>
+      <div class="fg">
+        <label class="fl">Add-Ons</label>
+        <div class="ao-checks">
+          <label class="ao-chk"><input type="checkbox" name="Add-On: Salt Stain Removal" value="$20"><span class="ao-lbl">Salt Stain Removal</span><span class="ao-pr">+$20</span></label>
+          <label class="ao-chk"><input type="checkbox" name="Add-On: Pet Hair Removal" value="$35"><span class="ao-lbl">Pet Hair Removal</span><span class="ao-pr">+$35</span></label>
+          <label class="ao-chk"><input type="checkbox" name="Add-On: Fabric Stain Removal" value="$20"><span class="ao-lbl">Fabric Stain Removal</span><span class="ao-pr">+$20</span></label>
+          <label class="ao-chk"><input type="checkbox" name="Add-On: Wax Application" value="$20"><span class="ao-lbl">Wax Application</span><span class="ao-pr">+$20</span></label>
+          <label class="ao-chk"><input type="checkbox" name="Add-On: Leather Conditioning" value="$15"><span class="ao-lbl">Leather Conditioning</span><span class="ao-pr">+$15</span></label>
+        </div>
+      </div>
+      <div class="fg">
+        <label class="fl" for="fct">City / Location</label>
+        <input type="text" class="fi" id="fct" name="City / Location" placeholder="Guelph, ON">
+      </div>
+      <div class="fg">
+        <label class="fl" for="fno">Notes (optional)</label>
+        <textarea class="fta fi" id="fno" name="Notes" placeholder="Preferred date, specific concerns, or anything we should know..."></textarea>
+      </div>
+      <input type="hidden" name="Estimated Price" id="hiddenPrice" value="Custom quote needed">
+      <button type="submit" class="br" style="width:100%;justify-content:center;font-size:.85rem;letter-spacing:4px;clip-path:none;cursor:pointer">
+        <span>Send Quote Request</span><span>&#8594;</span>
+      </button>
+      <div class="form-msg" id="formMsg"></div>
+      <p style="font-family:var(--M);font-size:.58rem;color:var(--mu);margin-top:.75rem;letter-spacing:1px">We respond within 24 hours</p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="fl-logo">HEN<span>O</span>X</div>
+  <div class="fl-links">
+    <a href="https://instagram.com/henoxdetailing" target="_blank" rel="noopener noreferrer">Instagram</a>
+    <a href="https://tiktok.com/@henoxdetailing" target="_blank" rel="noopener noreferrer">TikTok</a>
+    <a href="https://g.page/r/henoxdetailing" target="_blank" rel="noopener noreferrer">Google Reviews</a>
+    <a href="tel:5194000367">(519) 400-0367</a>
+  </div>
+  <div class="fl-copy">&copy; <span id="cpyr"></span> HENOX Detailing &middot; Guelph, Ontario</div>
+</footer>
+<div class="fl-bottom">
+  <a href="#contact">Contact</a>
+  <a href="#services">Services</a>
+  <a href="mailto:Henihenihabesha@gmail.com">Email Us</a>
+</div>
+
+<script>
+// dynamic copyright year
+document.getElementById('cpyr').textContent=new Date().getFullYear();
+
+// set form redirect to current page with success param
+document.getElementById('formNext').value=window.location.href.split('?')[0]+'?submitted=true#contact';
+
+// show success message if redirected back from FormSubmit
+if(window.location.search.includes('submitted=true')){
+  var msg=document.getElementById('formMsg');
+  msg.className='form-msg success';
+  msg.textContent='Quote request sent! We will get back to you within 24 hours.';
+  history.replaceState(null,'',window.location.pathname+'#contact');
+}
+
+// custom cursor (only on devices with fine pointer)
+if(window.matchMedia('(pointer:fine)').matches){
+  document.body.classList.add('custom-cursor');
+  const cur=document.getElementById('cur'),ring=document.getElementById('curRing');
+  let mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;});
+  (function a(){cur.style.left=mx+'px';cur.style.top=my+'px';rx+=(mx-rx)*.11;ry+=(my-ry)*.11;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(a);})();
+}
+
+// nav scroll
+window.addEventListener('scroll',function(){document.getElementById('topNav').classList.toggle('sc',scrollY>60);});
+
+// slider
+var slides=[].slice.call(document.querySelectorAll('.slide'));
+var dots=[].slice.call(document.querySelectorAll('.dot'));
+var snum=document.getElementById('snum');
+var cs=0,tmr;
+function go(n){
+  slides[cs].classList.remove('active');slides[cs].setAttribute('aria-hidden','true');
+  dots[cs].classList.remove('active');dots[cs].setAttribute('aria-selected','false');
+  cs=(n+slides.length)%slides.length;
+  slides[cs].classList.add('active');slides[cs].setAttribute('aria-hidden','false');
+  dots[cs].classList.add('active');dots[cs].setAttribute('aria-selected','true');
+  snum.textContent=String(cs+1).padStart(2,'0');
+}
+function st(){tmr=setInterval(function(){go(cs+1);},5000);}
+function rt(){clearInterval(tmr);st();}
+document.getElementById('arrN').onclick=function(){go(cs+1);rt();};
+document.getElementById('arrP').onclick=function(){go(cs-1);rt();};
+dots.forEach(function(d,i){d.onclick=function(){go(i);rt();};});
+st();
+
+// scroll reveal
+var obs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target);}});},{threshold:.08});
+document.querySelectorAll('.rv,.rv-l').forEach(function(el){obs.observe(el);});
+['.aons-g','.tg','.proc-r','.pls'].forEach(function(s){
+  document.querySelectorAll(s+' .rv, '+s+' .stp').forEach(function(el,i){el.style.transitionDelay=(i*90)+'ms';});
+});
+document.querySelectorAll('.svcs-list .rv').forEach(function(el,i){el.style.transitionDelay=(i*80)+'ms';});
+
+// pricing
+var pr={
+  'In & Out Detail':{minivan:235,sedan:285,suv:335},
+  'Interior Detail':{minivan:175,sedan:225,suv:275},
+  'Premium Wash':{minivan:60,sedan:95,suv:115},
+  'Engine Bay Detail':{minivan:60,sedan:60,suv:60}
+};
+var vtMap={'6-8 Seats (Minivan)':'minivan','Sedan / Coupe / Hatchback':'sedan','SUV / Truck':'suv'};
+
+function uq(){
+  var s=document.getElementById('fsvc').value;
+  var v=document.getElementById('fvt').value;
+  var pe=document.getElementById('pe'),pa=document.getElementById('pea');
+  var hp=document.getElementById('hiddenPrice');
+  if(!s||!v||s==='Custom / Multiple Services'){pe.classList.remove('show');hp.value='Custom quote needed';return;}
+  var vk=vtMap[v];
+  var p=pr[s]?pr[s][vk]:null;
+  if(p){pe.classList.add('show');pa.innerHTML='<sup>$</sup>'+p+' CAD';hp.value='$'+p+' CAD (estimated)';}
+  else{pe.classList.remove('show');hp.value='Custom quote needed';}
+}
+document.getElementById('fsvc').addEventListener('change',uq);
+document.getElementById('fvt').addEventListener('change',uq);
+
+// add-on checkbox styling
+document.querySelectorAll('.ao-chk input').forEach(function(cb){
+  cb.addEventListener('change',function(){
+    this.closest('.ao-chk').classList.toggle('checked',this.checked);
+  });
+});
+
+// form validation (inline highlighting)
+document.getElementById('quoteForm').addEventListener('submit',function(e){
+  var valid=true;
+  var fields=['fn','em','fsvc','fvt'];
+  fields.forEach(function(id){
+    var el=document.getElementById(id);
+    if(!el.value||el.value===''){el.classList.add('err');valid=false;}
+    else{el.classList.remove('err');}
+  });
+  if(!valid){
+    e.preventDefault();
+    var msg=document.getElementById('formMsg');
+    msg.className='form-msg error';
+    msg.textContent='Please fill in all required fields (name, email, service, vehicle type).';
+  }
+});
+
+// video toggle play/pause
+function tvid(card){
+  var v=card.querySelector('video');
+  if(v.paused){
+    // pause any other playing videos first
+    document.querySelectorAll('.vid-card.playing').forEach(function(c){
+      c.querySelector('video').pause();
+      c.classList.remove('playing');
+    });
+    v.play();card.classList.add('playing');
+  } else {
+    v.pause();card.classList.remove('playing');
+  }
+}
+
+// clear error styling on input
+document.querySelectorAll('.fi').forEach(function(el){
+  el.addEventListener('input',function(){this.classList.remove('err');});
+  el.addEventListener('change',function(){this.classList.remove('err');});
+});
+</script>
+</body>
+</html>

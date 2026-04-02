@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"C:\\\\Users\\\\Myne\\\\Desktop\\\\Yabse\\\\images\")",
+      "Bash(cp \"SnapInsta_to_466397632_18383488543102520_8410436532363777073_n.jpg\" bmw-front.jpg)",
+      "Bash(cp \"SnapInsta_to_465973667_18383488606102520_5750855249303805763_n.jpg\" bmw-side.jpg)",
+      "Bash(cp \"SnapInsta_to_466007407_18383488585102520_9170628987983232441_n.jpg\" bmw-interior-dash.jpg)",
+      "Bash(cp \"SnapInsta_to_466041756_18383488570102520_7634204254153810840_n.jpg\" bmw-interior-door.jpg)",
+      "Bash(cp \"SnapInsta_to_466149489_18383488615102520_2114260045952991570_n.jpg\" bmw-interior-seat.jpg)",
+      "Bash(cp \"SnapInsta_to_AQNACMuH0HlDDL_gwR6OwhEVkevOePYuQiFdIjLwbEIy7iDej4.mp4\" clip-1.mp4)",
+      "Bash(cp \"SnapInsta_to_AQPNbU0_ugDMnI3fWEFtGTpuqh_VjVHuTQst703BQzlxqL3GZS.mp4\" clip-2.mp4)",
+      "Bash(cp \"SnapInsta_to_AQPtXhKg4PJMtC7TZ9IrWnnR0NNJhqUfjIDViArQY6_ZgbUrEc.mp4\" clip-3.mp4)"
+    ]
+  }
+}
