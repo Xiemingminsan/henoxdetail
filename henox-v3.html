@@ -421,8 +421,6 @@ footer{background:var(--black);border-top:1px solid var(--bdr);padding:3rem 4rem
     </div>
   </div>
 
-  <button class="arr arr-p" id="arrP" aria-label="Previous slide">&#8592;</button>
-  <button class="arr arr-n" id="arrN" aria-label="Next slide">&#8594;</button>
   <div class="dots" id="dotWrap" role="tablist" aria-label="Slide navigation">
     <button class="dot active" role="tab" aria-label="Slide 1" aria-selected="true"></button>
     <button class="dot" role="tab" aria-label="Slide 2" aria-selected="false"></button>
@@ -889,8 +887,6 @@ function go(n){
 }
 function st(){tmr=setInterval(function(){go(cs+1);},5000);}
 function rt(){clearInterval(tmr);st();}
-document.getElementById('arrN').onclick=function(){go(cs+1);rt();};
-document.getElementById('arrP').onclick=function(){go(cs-1);rt();};
 dots.forEach(function(d,i){d.onclick=function(){go(i);rt();};});
 st();
 
